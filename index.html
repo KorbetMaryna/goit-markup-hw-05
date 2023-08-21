@@ -522,7 +522,7 @@
         <div class="page-footer-form">
           <p class="page-footer-form-title">Subscribe</p>
           <form class="page-footer-form-items">
-            <label>
+            <label class="page-footer-form-items-label">
               <input
                 class="page-footer-form-items-input"
                 name="email"
@@ -552,14 +552,12 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
-
         <p class="modal-form-text">
           Leave your contacts and we will call you back
         </p>
-
         <form class="modal-form">
           <div class="modal-form-field">
-            <label class="modal-form-field-name" for="user_name"> Name</label>
+            <label class="modal-form-field-label" for="user-name"> Name</label>
             <div class="modal-input-wrapper">
               <input
                 class="modal-form-input"
@@ -570,19 +568,18 @@
                 pattern="[a-zA-Zа-яА-ЯіІїЇєЄйЙ']+"
                 title="Maryna, Марина"
               />
-              <svg class="modal-form-icon" width="18" height="18">
+              <svg class="modal-form-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-name"></use>
               </svg>
             </div>
           </div>
-
           <div class="modal-form-field">
-            <label class="modal-form-field-name" for="user_phone">Phone</label>
+            <label class="modal-form-field-label" for="user-phone">Phone</label>
             <div class="modal-input-wrapper">
               <input
                 class="modal-form-input"
                 name="user_phone"
-                id="user_phone"
+                id="user-phone"
                 type="tel"
                 required
                 pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
@@ -593,14 +590,13 @@
               </svg>
             </div>
           </div>
-
           <div class="modal-form-field">
-            <label class="modal-form-field-name" for="user_email">Email</label>
+            <label class="modal-form-field-label" for="user-email">Email</label>
             <div class="modal-input-wrapper">
               <input
                 class="modal-form-input"
                 name="user_email"
-                id="user_email"
+                id="user-email"
                 type="email"
                 required
                 pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
@@ -611,35 +607,36 @@
               </svg>
             </div>
           </div>
-
-          <div class="modal-form-field">
-            <label class="modal-form-field-name" for="user_message"
+          <div class="modal-form-message-container">
+            <label class="modal-form-field-label" for="user-comment"
               >Comment</label
             >
             <textarea
               class="modal-form-message"
               name="user_message"
-              id="user_message"
+              id="user-comment"
               placeholder="Text input"
             ></textarea>
           </div>
-
           <div class="modal-chackbox">
-            <label class="modal-chackbox-label">
-              <input
-                class="modal-chackbox-input"
-                name="user_accept_policy"
-                type="checkbox"
-                required
-              />
-              <svg class="modal-form-chackbox-icon" width="16" height="16">
-                <use href="./images/icons.svg#icon-checkmark"></use>
-              </svg>
+            <input
+              class="modal-chackbox-input visually-hidden"
+              name="user-privacy"
+              id="user-privacy"
+              type="checkbox"
+              value="true"
+              required
+            />
+            <label class="modal-chackbox-label" for="user-privacy">
+              <span class="modal-form-chackbox-icon">
+                <svg>
+                  <use href="./images/icons.svg#icon-checkmark"></use>
+                </svg>
+              </span>
               I accept the terms and conditions of the&nbsp;
               <a class="modal-chackbox-label-link" href="./">Privacy Policy </a>
             </label>
           </div>
-
           <button class="modal-form-submit-btn" type="submit">Send</button>
         </form>
       </div>
