@@ -26,7 +26,7 @@
 
     --letter-spacing-btn: 0.64px;
     --letter-spacing-logo: 0.54px;
-    --letter-aspacing-intut: 0.48px;
+    --letter-aspacing-input: 0.48px;
     --letter-spacing-text: 0.32px;
     --letter-spacing-first-title: 1.12px;
     --letter-spacing-second-title: 0.72px;
@@ -401,7 +401,7 @@ body {
     font-size: var(--font-size-small-text);
     font-weight: var(--font-weight-regular);
     line-height: var(--line-height-input);
-    letter-spacing: var(--letter-aspacing-intut);
+    letter-spacing: var(--letter-aspacing-input);
 } 
 
 .page-footer-form-button {
@@ -877,7 +877,7 @@ body {
     font-size: var(--font-size-small-text);
     font-weight: var(--font-weight-regular);
     line-height: var(--line-height-micro);
-    letter-spacing: var(--letter-aspacing-intut);
+    letter-spacing: var(--letter-aspacing-input);
     margin-bottom: 4px;
 }
 
@@ -932,7 +932,7 @@ body {
     font-size: var(--font-size-small-text);
     font-weight: var(--font-weight-regular);
     line-height: var(--line-height-micro);
-    letter-spacing: var(--letter-aspacing-intut);
+    letter-spacing: var(--letter-aspacing-input);
 }
 
 .modal-form-message:focus {
@@ -959,7 +959,7 @@ body {
     font-size: var(--font-size-small-text);
     font-weight: var(--font-weight-regular);
     line-height: var(--line-height-micro);
-    letter-spacing: var(--line-height-micro);
+    letter-spacing: var(--letter-aspacing-input);
 }
 
 .modal-chackbox-label-link {
