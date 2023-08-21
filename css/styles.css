@@ -352,6 +352,7 @@ body {
     background-color: var(--color-success);
 }
 
+
 .page-footer-form {
     display: flex;
     flex-direction: column;
