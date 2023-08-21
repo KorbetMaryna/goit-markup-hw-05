@@ -490,6 +490,8 @@ body {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     border-style: none;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    line-height: 1.5;
+    letter-spacing: 0.04em;
 }
 
 .hero-btn:hover,
@@ -968,6 +970,7 @@ body {
 .modal-chackbox-input {
     position: absolute;
     appearance: none;
+    outline: transparent;
 }
 
 .modal-chackbox-label {
@@ -985,20 +988,24 @@ body {
 }
 
 .modal-form-chackbox-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     fill: transparent;
     width: 16px;
     height: 16px;
     border-radius: 2px;
-    border: 1px solid var(--color-modal-overlay, rgba(46, 47, 66, 0.40));
+    border: 1px solid rgba(46, 47, 66, 0.4);
     padding: 3px;
     margin-right: 8px;
     cursor: pointer;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-chackbox-input:checked + .modal-form-chackbox-icon {
-    fill: var(--color-light);
     background-color: var(--color-pressed-state);
+    fill: var(--color-light);
+    border: none;
 }
 
 .modal-chackbox-input:focus+.modal-form-chackbox-icon {
